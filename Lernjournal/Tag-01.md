@@ -73,7 +73,7 @@ Die Werte sind **echte Zahlen mit gleichen Abständen**. Man kann damit rechnen,
 
 ---
 
-## Die drei Datenarten
+## Datenarten
 
 | Tätigkeit | Unstrukturierte Daten | Wenig strukturierte Daten | Strukturierte Daten |
 |---|---|---|---|
@@ -83,3 +83,8 @@ Die Werte sind **echte Zahlen mit gleichen Abständen**. Man kann damit rechnen,
 | **Mutieren** | **mittelschwierig** – Stelle muss gesucht werden, keine Felder | **einfach** – über Schlüssel/Tags auffindbar | **sehr einfach** – gezielt per ID ändern (UPDATE) |
 | **Löschen** | **mittelschwierig** – einzelne Infos schwer zu finden, nur ganze Datei einfach | **einfach** – Elemente über Schlüssel entfernbar | **einfach** – gezielt per ID (DELETE), Beziehungen beachten |
 | **Auswerten** | **sehr schwierig** – keine Felder, nur Volltextsuche oder manuell lesen | **mittelschwierig** – teilweise filterbar, Struktur nicht einheitlich | **sehr einfach** – mit SQL suchen, filtern, sortieren, gruppieren |
+
+---
+
+## Rendundanz
+Redundanz bedeutet, dass die gleiche Information mehrfach gespeichert ist, zum Beispiel die Adresse eines Kunden in jeder seiner Bestellungen. Das braucht mehr Speicherplatz, und wenn man die Daten nur an einer Stelle ändert, widersprechen sie sich (Inkonsistenz). Darum teilt man die Daten in einer Datenbank auf mehrere Tabellen auf (Normalisierung), ausser die Redundanz ist gewollt, zum Beispiel bei Backups zur Datensicherheit.
