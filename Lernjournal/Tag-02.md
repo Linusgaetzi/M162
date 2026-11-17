@@ -138,6 +138,25 @@ Weitere Typen (Aufzählungstyp, Pointer usw.) sind in Modul 162 nicht relevant.
 Theoretisch: 100'000 Bit = 12'500 Byte (ca. 12,5 KB)
 Real: 100'000 Byte (ca. 100 KB)
 
+
 **10. Eine Datenbank enthält 5 Millionen Datensätze. Das Attribut «Wochentag» wird als INTEGER (4 Byte) gespeichert. Tatsächlich kommen nur die Werte 1 bis 7 vor. Diskutiere in deiner Gruppe, ob dieser Datentyp zweckmässig ist.**
 
 Nein. Mit 4 Byte sind es 20 MB. Für die Werte 1 bis 7 reichen 3 Bit, in der Praxis 1 Byte (z. B. TINYINT), das wären nur 5 MB. Ein kleinerer Datentyp spart 15 MB und macht Abfragen etwas schneller.
+
+# Alphanumerische Codes
+
+## Auftrag 1 
+
+- Nein, die Umlaute sind nicht korrekt dargestellt.
+- <img width="566" height="168" alt="image" src="https://github.com/user-attachments/assets/c5fd5b9e-488d-467b-9149-74b21f021050" />
+
+
+## Auftrag 2
+
+- Ja, die Umlaute sind korrekt dargestellt
+<img width="590" height="178" alt="image" src="https://github.com/user-attachments/assets/b8772660-7355-47bf-a82f-bb30e5c89cc8" />
+- Der Html Code ist:
+<img width="664" height="284" alt="image" src="https://github.com/user-attachments/assets/52f938b4-2f2e-4b01-a17c-21fdb89f8312" />
+<img width="604" height="266" alt="image" src="https://github.com/user-attachments/assets/e3cefda9-50f5-4f32-8754-5203a367f3e6" />
+
+
