@@ -80,3 +80,81 @@ Wenn ein Text mit einer anderen Kodierung gelesen wird, als er gespeichert wurde
 - **ANSI:** 256 Zeichen, aber jedes Land hat eine andere Codepage
 - **Unicode:** eine Nummer für jedes Zeichen der Welt
 - **UTF-8, UTF-16, UTF-32:** drei Arten, diese Nummern zu speichern. UTF-8 ist heute der Standard.
+
+# Datenstrukturen – Übersicht
+ 
+## 1. Hashmap / Hashtabelle
+**Prinzip:** Schlüssel → Wert. Eine Hashfunktion bestimmt das Fach.
+**Beispiel:** Garderobe: Nummer 42 → direkt zu Haken 42.
+ 
+```
+hash("Lena") = 3  →  [0: Tim] [1] [2] [3: Lena]
+```
+✅ sehr schnelles Suchen ❌ keine Sortierung
+ 
+## 2. Binärer Suchbaum
+**Prinzip:** Max. 2 Kinder pro Knoten. Links kleiner, rechts grösser.
+**Beispiel:** Zahlenraten mit „höher / tiefer“.
+ 
+```
+      8
+     / \
+    3   10
+   / \
+  1   6
+```
+✅ schnelles Suchen ❌ ohne Balance wird er zur Kette
+ 
+## 3. Linked List / Verkettete Liste
+**Prinzip:** Jeder Knoten zeigt auf den nächsten.
+**Beispiel:** Schnitzeljagd.
+ 
+```
+[A]──→[B]──→[C]──→ null
+```
+✅ schnelles Einfügen/Löschen ❌ langsames Suchen
+ 
+## 4. Stack / Stapelspeicher (LIFO)
+**Prinzip:** Oben rein, oben raus.
+**Beispiel:** Tellerstapel, Ctrl+Z.
+ 
+```
+[C] ← zuerst raus
+[B]
+[A]
+```
+✅ letztes Element sofort ❌ kein Zugriff auf die Mitte
+ 
+## 5. Heap
+**Prinzip:** Baum, Eltern immer grösser (Max-Heap) oder kleiner (Min-Heap) als Kinder.
+**Beispiel:** Chef steht immer oben.
+ 
+```
+     50
+    /  \
+  30    40
+```
+✅ Grösstes/Kleinstes sofort ❌ beliebig suchen
+ 
+## 6. PriorityQueue / Vorrangwarteschlange
+**Prinzip:** Wichtigstes zuerst raus. Meist mit Heap gebaut.
+**Beispiel:** Notaufnahme im Spital.
+ 
+```
+Rein: Finger(2), Herzinfarkt(10), Beinbruch(6)
+Raus: Herzinfarkt → Beinbruch → Finger
+```
+ 
+## 7. Queue / Warteschlange (FIFO)
+**Prinzip:** Hinten rein, vorne raus.
+**Beispiel:** Kassenschlange, Drucker.
+ 
+```
+raus ← [A] [B] [C] ← rein
+```
+✅ Reihenfolge bleibt ❌ kein Zugriff auf die Mitte
+ 
+## Merksätze
+- **Stack** = Tellerstapel, **Queue** = Kassenschlange
+- **Heap** = das Wie, **PriorityQueue** = das Was
+- **Suchbaum:** links < rechts, **Heap:** oben > unten
