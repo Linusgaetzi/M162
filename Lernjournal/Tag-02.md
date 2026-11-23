@@ -150,7 +150,6 @@ Nein. Mit 4 Byte sind es 20 MB. Für die Werte 1 bis 7 reichen 3 Bit, in der Pra
 - Nein, die Umlaute sind nicht korrekt dargestellt.
 - <img width="566" height="168" alt="image" src="https://github.com/user-attachments/assets/c5fd5b9e-488d-467b-9149-74b21f021050" />
 
-
 ## Auftrag 2
 
 - Ja, die Umlaute sind korrekt dargestellt
